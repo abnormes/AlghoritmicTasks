@@ -31,12 +31,4 @@ public class ArrayWithZerosImpl implements ArrayWithZeros {
         array.set(step + 1, 0);
         ++step;
     }
-
-    public static void main(String[] args) {
-        List<Integer> numberList = new ArrayList<>(Arrays.asList(1,2,3));
-        ArrayWithZeros test = new ArrayWithZerosImpl();
-
-        test.modify(numberList);
-        System.out.printf(numberList.toString());
-    }
 }
